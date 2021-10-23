@@ -2,7 +2,7 @@
 //  LoginView.swift
 //  Bankey
 //
-//  Created by jrasmusson on 2021-09-25.
+//  Created by jrasmusson on 2021-09-23.
 //
 
 import Foundation
@@ -17,7 +17,6 @@ class LoginView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         style()
         layout()
     }
@@ -25,11 +24,15 @@ class LoginView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: UIView.noIntrinsicMetric, height: UIView.noIntrinsicMetric)
+    }
 }
 
 extension LoginView {
     
-    func style() {
+    private func style() {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .secondarySystemBackground
         
@@ -40,26 +43,27 @@ extension LoginView {
         usernameTextField.translatesAutoresizingMaskIntoConstraints = false
         usernameTextField.placeholder = "Username"
         usernameTextField.delegate = self
-        
+
+        dividerView.translatesAutoresizingMaskIntoConstraints = false
+        dividerView.backgroundColor = .secondarySystemFill
+
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.placeholder = "Password"
         passwordTextField.isSecureTextEntry = true
         passwordTextField.delegate = self
-        
-        dividerView.translatesAutoresizingMaskIntoConstraints = false
-        dividerView.backgroundColor = .secondarySystemFill
-        
+                
         layer.cornerRadius = 5
         clipsToBounds = true
     }
     
-    func layout() {
+    private func layout() {
         stackView.addArrangedSubview(usernameTextField)
         stackView.addArrangedSubview(dividerView)
         stackView.addArrangedSubview(passwordTextField)
-        
+
         addSubview(stackView)
         
+        // StackView
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 1),
             stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
