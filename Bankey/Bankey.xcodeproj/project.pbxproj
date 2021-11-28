@@ -24,6 +24,8 @@
 		71A0F7CD26FD2B76008EAFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A0F7CC26FD2B76008EAFD8 /* Assets.xcassets */; };
 		71A0F7D026FD2B76008EAFD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A0F7CE26FD2B76008EAFD8 /* LaunchScreen.storyboard */; };
 		71A0F7D826FD2BBA008EAFD8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A0F7D726FD2BBA008EAFD8 /* LoginView.swift */; };
+		71B8A9BE2753D428003610BF /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B8A9BD2753D428003610BF /* ProfileTests.swift */; };
+		71B8A9C02753D53B003610BF /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B8A9BF2753D53B003610BF /* AccountTests.swift */; };
 		71C88F832739588D00822B33 /* Decimal+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C88F822739588D00822B33 /* Decimal+Utils.swift */; };
 		71C88F85273958F700822B33 /* CurencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C88F84273958F700822B33 /* CurencyFormatter.swift */; };
 		71D109B22705DD3B000A0633 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D109B12705DD3B000A0633 /* OnboardingViewController.swift */; };
@@ -63,6 +65,8 @@
 		71A0F7CF26FD2B76008EAFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71A0F7D126FD2B76008EAFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71A0F7D726FD2BBA008EAFD8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		71B8A9BD2753D428003610BF /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		71B8A9BF2753D53B003610BF /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		71C88F822739588D00822B33 /* Decimal+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Utils.swift"; sourceTree = "<group>"; };
 		71C88F84273958F700822B33 /* CurencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurencyFormatter.swift; sourceTree = "<group>"; };
 		71D109B12705DD3B000A0633 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +96,8 @@
 		711F1F9C273BE94B00381912 /* BankeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				711F1FA4273BEAAD00381912 /* CurrencyFormatterTests.swift */,
+				71B8A9BC2753D40D003610BF /* AccountSummary */,
+				71B8A9BB2753D3FF003610BF /* Utils */,
 			);
 			path = BankeyUnitTests;
 			sourceTree = "<group>";
@@ -193,6 +198,23 @@
 				71A0F7D126FD2B76008EAFD8 /* Info.plist */,
 			);
 			name = Files;
+			sourceTree = "<group>";
+		};
+		71B8A9BB2753D3FF003610BF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				711F1FA4273BEAAD00381912 /* CurrencyFormatterTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		71B8A9BC2753D40D003610BF /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				71B8A9BD2753D428003610BF /* ProfileTests.swift */,
+				71B8A9BF2753D53B003610BF /* AccountTests.swift */,
+			);
+			path = AccountSummary;
 			sourceTree = "<group>";
 		};
 		71F770932710E98E0025AC04 /* Util */ = {
@@ -312,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				711F1FA5273BEAAD00381912 /* CurrencyFormatterTests.swift in Sources */,
+				71B8A9C02753D53B003610BF /* AccountTests.swift in Sources */,
+				71B8A9BE2753D428003610BF /* ProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
