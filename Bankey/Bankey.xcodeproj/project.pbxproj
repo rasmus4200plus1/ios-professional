@@ -13,6 +13,8 @@
 		712F49E4275A59730066467E /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712F49E3275A59730066467E /* SkeletonCell.swift */; };
 		713845772729784700E5E07C /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713845762729784700E5E07C /* AccountSummaryViewController.swift */; };
 		713D9FFF270F216F00193EE6 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713D9FFE270F216F00193EE6 /* DummyViewController.swift */; };
+		713FE94827662FA80071B2CF /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713FE94727662FA80071B2CF /* ProfileManager.swift */; };
+		713FE94A2766329B0071B2CF /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713FE9492766329B0071B2CF /* AccountSummaryViewControllerTests.swift */; };
 		71555DB7274AA94300ECC4D7 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71555DB6274AA94300ECC4D7 /* UITextField+SecureToggle.swift */; };
 		71555DBD274AC95200ECC4D7 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71555DBC274AC95200ECC4D7 /* ShakeyBellView.swift */; };
 		7156C4172740072800F29827 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7156C4162740072800F29827 /* NSNotificationName.swift */; };
@@ -54,6 +56,8 @@
 		712F49E3275A59730066467E /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		713845762729784700E5E07C /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		713D9FFE270F216F00193EE6 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		713FE94727662FA80071B2CF /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		713FE9492766329B0071B2CF /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		71555DB6274AA94300ECC4D7 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		71555DBC274AC95200ECC4D7 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		7156C4162740072800F29827 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
@@ -132,8 +136,17 @@
 				718F09162753C78600F6C794 /* AccountSummaryViewController+Networking.swift */,
 				71267A902734135300DC0F8B /* Header */,
 				71267A912734136E00DC0F8B /* Cells */,
+				713FE94627662F8E0071B2CF /* Networking */,
 			);
 			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		713FE94627662F8E0071B2CF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				713FE94727662FA80071B2CF /* ProfileManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		71555DBB274AC93B00ECC4D7 /* Components */ = {
@@ -219,6 +232,7 @@
 			children = (
 				71B8A9BD2753D428003610BF /* ProfileTests.swift */,
 				71B8A9BF2753D53B003610BF /* AccountTests.swift */,
+				713FE9492766329B0071B2CF /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -342,6 +356,7 @@
 				711F1FA5273BEAAD00381912 /* CurrencyFormatterTests.swift in Sources */,
 				71B8A9C02753D53B003610BF /* AccountTests.swift in Sources */,
 				71B8A9BE2753D428003610BF /* ProfileTests.swift in Sources */,
+				713FE94A2766329B0071B2CF /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +367,7 @@
 				71EA3CF92724662500B12DE6 /* UIViewController+Utils.swift in Sources */,
 				712F49E4275A59730066467E /* SkeletonCell.swift in Sources */,
 				718F09152753C68700F6C794 /* Date+Utils.swift in Sources */,
+				713FE94827662FA80071B2CF /* ProfileManager.swift in Sources */,
 				71A0F7C826FD2B75008EAFD8 /* LoginViewController.swift in Sources */,
 				71F770952710E99A0025AC04 /* LocalState.swift in Sources */,
 				7167DB7C272ACC6C004CAEB6 /* AccountSummaryHeaderView.swift in Sources */,
