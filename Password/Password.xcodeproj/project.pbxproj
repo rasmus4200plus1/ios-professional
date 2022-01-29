@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7131568427A593A300969937 /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131568327A593A300969937 /* PasswordCriteriaView.swift */; };
 		71A08D87279D9D7500CBDCED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A08D86279D9D7500CBDCED /* AppDelegate.swift */; };
 		71A08D8B279D9D7500CBDCED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A08D8A279D9D7500CBDCED /* ViewController.swift */; };
 		71A08D90279D9D7600CBDCED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A08D8F279D9D7600CBDCED /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7131568327A593A300969937 /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
 		71A08D83279D9D7500CBDCED /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A08D86279D9D7500CBDCED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A08D8A279D9D7500CBDCED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7131568227A5937F00969937 /* PasswordStatusView */ = {
+			isa = PBXGroup;
+			children = (
+				7131568327A593A300969937 /* PasswordCriteriaView.swift */,
+			);
+			path = PasswordStatusView;
+			sourceTree = "<group>";
+		};
 		71A08D7A279D9D7500CBDCED = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 				71A08D86279D9D7500CBDCED /* AppDelegate.swift */,
 				71A08D8A279D9D7500CBDCED /* ViewController.swift */,
 				71A08D9B279DA85C00CBDCED /* PasswordTextField.swift */,
+				7131568227A5937F00969937 /* PasswordStatusView */,
 			);
 			path = Password;
 			sourceTree = "<group>";
@@ -144,6 +155,7 @@
 			files = (
 				71A08D8B279D9D7500CBDCED /* ViewController.swift in Sources */,
 				71A08D87279D9D7500CBDCED /* AppDelegate.swift in Sources */,
+				7131568427A593A300969937 /* PasswordCriteriaView.swift in Sources */,
 				71A08D9C279DA85C00CBDCED /* PasswordTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
